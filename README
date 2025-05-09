@@ -1,0 +1,12 @@
+scripts to test tiflash resource control.
+
+- multiple resource group
+    - high.sh: start queries using 3 resource group
+    - **high.change.sh**: similar as above, but change RU_PER_SEC every n mins
+- periodically
+    - periodically.sh: run a low workload continuously, with periodic high workload bursts.
+    - periodically.change.sh: similar as above but also kill after 1200s
+- single resource group
+    - 1.sh: start 10 process to sql using one resource group
+    - 1.change.sh: similar as above, but change RU_PER_SEC every n mins
+
